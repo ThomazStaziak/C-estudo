@@ -8,7 +8,7 @@ int main (int argc, char** argv)
 {
   if (argc != 2)
   {
-      printf("Key must to be at least 2: \n");
+      printf("Usage: ./caesar k\n");
       return 1;
   }
 
@@ -24,6 +24,7 @@ int main (int argc, char** argv)
 
   string pText = get_string("Enter your plaintext: ");
 
+  printf("ciphertext: ");
   for (i =  0; i < strlen(pText); i++) {
       if (islower(pText[i])) {
         printf("%c", (pText[i] - 'a' + key) % 26 + 'a');
@@ -33,6 +34,6 @@ int main (int argc, char** argv)
         printf("%c", pText[i]);
       }
   }
-      printf("\n");
+  printf("\n");
   // program to encipher text with caeser algorithm
 }
