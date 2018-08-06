@@ -6,12 +6,16 @@
 
 int main (int argc, char** argv)
 {
+  // if the parameters on command line isn't 2 the program doesn't work for example :
+  // ./caesar 2 => works bacause the first is ./caesar and the second is 2
+  // ./caesar => doesn't work because there's only one parameter
   if (argc != 2)
   {
       printf("Usage: ./caesar k\n");
       return 1;
   }
 
+  // taking the key parameter with string and passing to int with atoi function
   int key = atoi(argv[1]), i;
 
   if (key < 0)
