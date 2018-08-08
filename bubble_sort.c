@@ -6,16 +6,15 @@ int main(void)
     int i, j, help, array[MAX];
 
     for (i = 0; i < MAX; i++) {
-        printf("Enter a number please:");
+        printf("Enter a number into the %i° position:", i + 1);
         scanf("%d", &array[i]);
     }
 
-    printf("Your numbers before:\n");
+    printf("Your numbers before the bublle sort:\n");
 
     for (i = 0; i < MAX; i++) {
         printf("%d\n", array[i]);
     }
-
     // here we take the main position and her successor to check who is the higher
     // if the main is higher we store her in a variable and pass the successor
     // to the main position and the variable who have stored a main position
@@ -30,7 +29,7 @@ int main(void)
         }
     }
 
-    printf("Your numbers after:\n");
+    printf("Your numbers after the bubble sort:\n");
 
     for (i = 0; i < MAX; i++) {
         printf("%d\n", array[i]);
