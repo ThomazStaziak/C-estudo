@@ -6,11 +6,13 @@
 
 int main (int argc, char** argv)
 {
+    // here we see if the user are giving the encipher key
     if (argc != 2)
     {
       printf("Usage: ./vigenere k\n");
       return 1;
     } else {
+      // here we see if the encipher key is an alpha value
       for (int val = 0; val < strlen(argv[1]); val++)
       {
         if (!isalpha(argv[1][val]))
@@ -21,8 +23,10 @@ int main (int argc, char** argv)
       }
     }
 
+    // here we transform the encipher key in a string
     string key = argv[1];
 
+    // taking the encipher key length
     int keyLen = strlen(key);
 
     int k = 0, nKey;
@@ -32,6 +36,8 @@ int main (int argc, char** argv)
     printf("ciphertext: ");
     for (int i =  0; i < strlen(pText); i++)
     {
+        // loop algorithm for the encipher not break
+        // formula => key[KeyNumber % KeyLength] - 97
         nKey = tolower(key[k % keyLen]) - 'a';
         if (isalpha(pText[i]))
         {
