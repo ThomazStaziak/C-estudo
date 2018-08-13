@@ -13,6 +13,4 @@ int main(void) {
 
     // here i print the show variable
     printf("%d\n", show);
-    // https://gist.github.com/robertsonf/fc0ed0b72631f69a24ced1e95ca1c335
-
 }
