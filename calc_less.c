@@ -38,6 +38,6 @@ int main(void) {
             }
         }
     } else {
-        printf("Ok bye :(");
+        printf("Ok bye :(\n");
     }
 }
