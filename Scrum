@@ -1,0 +1,45 @@
+Dev team size => 3 to 9
+
+Scrum Master has to be a specialist of Scrum
+Product Owner he's is the owner of the product
+Development team does all the dev jobs
+
+Scrum Team => the entire team
+PO => Management for SM
+SM => Consulting for DT
+DT => Jobs for himself
+
+EVENTS and your Time-Boxes
+
+Planning (8 hours) {
+participants: Scrum Team
+}
+Sprint (4 weeks or less) {
+  participants: Dev team
+}
+Daily (15 minutes) {
+  participants: Dev team
+  On the daily the SM just have to review the daily time
+}
+Review(4 hours) {
+  participants: Scrum Team + Stakeholders
+}
+Retro (3 hours) {
+  participants: SM + DT
+
+}
+
+ARTEFACTS
+
+Product Backlog {
+  participants: PO
+}
+
+Sprint Backlog {
+  participants: Dev team
+}
+
+Increments {
+  who define the done is the dev team
+  and the definition of done is the same for two or more teams
+}
