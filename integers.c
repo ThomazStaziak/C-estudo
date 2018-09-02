@@ -21,4 +21,7 @@ int main()
 
     // printing the var2 value
     printf("the var2 value is: %d\n", var2);
+
+    // printing the absolute value of a number
+    printf("the absolute value of value is: %d\n", abs(-19));
 }
