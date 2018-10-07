@@ -4,19 +4,19 @@
 int main () {
     int num1, num2;
 
-    printf("Digite um número: ");
+    printf("Enter a number: ");
     scanf("%d", &num1);
 
-    printf("Digite outro número: ");
+    printf("Enter a number: ");
     scanf("%d", &num2);
-    
-    // vendo se o primeiro número é maior que o segundo
+
+    // checking if the first number is higher than second
     if (num1 > num2) {
         printf("O número %d é maior que o número %d\n", num1, num2);
-    // vendo se o primeiro número é igual ao segundo
+    // checking if the first number is equal second
     } else if (num1 == num2) {
         printf("Os números são iguais\n");
-    // vendo se o segundo número é maior que primeiro
+    // checking if the second number is higher than first
     } else if (num1 < num2) {
         printf("O número %d é maior que o número %d\n", num2, num1);
     }
